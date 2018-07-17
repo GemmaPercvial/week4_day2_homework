@@ -5,8 +5,8 @@ class TestGame < Minitest::Test
 
   def setup
     @game1 = Game.new("rock", "rock")
-    @game2 = Game.new("rock", "sissors")
-    @game3 = Game.new("sissors", "rock")
+    @game2 = Game.new("rock", "scissors")
+    @game3 = Game.new("scissors", "rock")
   end
 
   def test_game_play_draw
@@ -23,5 +23,5 @@ class TestGame < Minitest::Test
     expect = @game3.game_play
     assert_equal("Player 2 Won!", expect)
   end
-   
+
 end

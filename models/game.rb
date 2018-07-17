@@ -8,11 +8,11 @@ class Game
   def game_play
     if @player1_input == @player2_input
       return "Draw"
-    elsif @player1_input == "rock" && @player2_input == "sissors"
+    elsif @player1_input == "rock" && @player2_input == "scissors"
       return "Player 1 Won! with rock"
     elsif @player1_input == "paper" && @player2_input == "rock"
       return "Player 1 Won!"
-    elsif @player1_input == "sissors" && @player2_input == "paper"
+    elsif @player1_input == "scissors" && @player2_input == "paper"
       return "Player 1 Won!"
     end
     return "Player 2 Won!"
